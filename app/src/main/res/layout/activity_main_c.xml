@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@android:color/darker_gray"
+    tools:context="ru.mail.dvoronkov.testapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/textQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.30"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonAnswer"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button.answer" />
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button.next" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.70"
+            android:rotation="0"
+            app:srcCompat="@drawable/g4a0063" />
+
+        <TextView
+            android:id="@+id/textAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:text="TextView" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
